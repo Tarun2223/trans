@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-image: url(./cat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+        .container{
+            width: 400px;
+            text-align: center;
+            height: 200px;
+            background-image: url(./cat.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            align-content: center;
+            margin: 15%;
+
+        }
+        button{
+            margin: 10px;
+            background-color:yellow;
+        }
+        button:hover{
+            color: white;
+            background-color: black;
+            box-shadow: 10px 10px 5px 12px rgb(178, 204, 213);
+        }
+        #sun{
+            border-radius: 15px;
+            margin-top: 30px;
+
+        }
+       .ok:hover~img{
+            transition: all 4s;
+             transform: translate(50px,100px);
+             width: 300px;
+        }
+        .ok1:hover~img{
+            transition: all 4s;
+            transform: rotate(999999999999999999999999999999999999999999999deg);
+        }
+       .ok2:hover~img{
+        transition: all 4s;
+        transform: scale(2,4);
+       }
+       .ok3:hover~img{
+        transition: all 4s;
+        transform: skew(140deg,100deg);
+       }
+       @keyframes hi {
+         
+       }
+    
+        
+        @media screen and (min-width:600px) {
+            .container{
+                width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="ok">Transilate</button>
+        <button class="ok1">Rotate</button>
+        <button class="ok2">Scale</button>
+        <button class="ok3">Skew</button>
+        <img src="./dog.jpg" width="100px" id="sun">
+    </div>
+   <a href="./mirchi.jpg"> <button>click it</button></a>
+</body>
+</html>
